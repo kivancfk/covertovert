@@ -4,3 +4,8 @@ Kıvanç FİLİZCİ
 
 These notes are related to the challenges and solutions that I have faced during the implementation of the first phase of the Ceng435 - Data Communication and Computer Networks course project.
 
+* I'd created the repo with the name of "Ceng435-pa1-converovert". That caused error while creating the docker image. I've changed the repo name to "covertovert" and the problem has been solved.
+
+** docker compose up -d -> successfully implemented
+** docker compose down -> successfully implemented
+
