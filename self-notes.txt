@@ -2,5 +2,5 @@ Ceng435-pa-phase1
 
 Kıvanç FİLİZCİ
 
-These notes are related to the challanges and solutions that I have faced during the implementation of the first phase of the Ceng435 - Data Communication and Computer Networks course project.
+These notes are related to the challenges and solutions that I have faced during the implementation of the first phase of the Ceng435 - Data Communication and Computer Networks course project.
 
