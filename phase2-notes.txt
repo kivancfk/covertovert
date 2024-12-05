@@ -1,1 +1,4 @@
-phase2
+Ceng435 - covert channel assignment - phase 2
+2024-25 Fall
+
+Notes on the assignment:
