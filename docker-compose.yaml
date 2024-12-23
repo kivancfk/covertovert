@@ -3,7 +3,7 @@ services:
     build: 
       dockerfile: docker/Dockerfile
       context: .
-    image: covertovert:latest
+    image: covertovertreceiver:latest
     hostname: receiver
     container_name: receiver
     privileged: true
@@ -20,7 +20,7 @@ services:
     build: 
       dockerfile: docker/Dockerfile
       context: .
-    image: covertovert:latest
+    image: covertovertsender:latest
     hostname: sender
     container_name: sender
     privileged: true

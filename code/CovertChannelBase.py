@@ -1,7 +1,7 @@
 import string
 import time
 import random
-from scapy.all import send
+from scapy.all import send, sendp, ARP, LLC
 
 # You are not allowed to change CovertChannelBase class, please make your implementation in the MyCovertChannel class.
 class CovertChannelBase:
@@ -18,7 +18,10 @@ class CovertChannelBase:
         - You must send each packet by using this function.
         - Call this function with the packet and sender's interface (Default interface is "eth0" and you do not have to set unless there is a specific purpose.)
         """
-        send(packet, iface=interface, verbose=False)
+        if packet.haslayer(ARP) or packet.haslayer(LLC):
+            sendp(packet, iface=interface, verbose=False)
+        else:
+            send(packet, iface=interface, verbose=False)
     def log_message(self, message, log_file_name):
         """
         - You can use this function to log the received message and it is not a must, you can write your own.
