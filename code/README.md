@@ -121,8 +121,7 @@ An example of PSV rule:
 - 
 
 #### The Covert Channel Capacity in our PA ####
-* Total bits = 128, Elapsed time = 0.1163 s
-* The Covert Channel Capacity ~ 1100.78 bits/s
+* The Covert Channel Capacity ~ 70 bits/s
 
 ### **5. Usage Instructions**
 
