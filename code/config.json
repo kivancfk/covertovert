@@ -1,18 +1,28 @@
 {
-  "covert_channel_code": "Replace it with the [Code] of chosen covert channel type seen in ODTUClass.",
+  "covert_channel_code": "CSC-PSV-LLC",
   "send": {
     "parameters": {
-      "parameter1": "p1",
-      "parameter2": 1234,
-      "log_file_name": "Example_UDPTimingInterarrivalChannelSender.log"
+      "log_file_name": "CSC-PSV-LLC_sender.log",
+      "threshold": 60,
+      "threshold_range": 10,
+      "llc_header_len": 3,
+      "frame_size_dot3": 60,
+      "epsilon": 0.000001,
+      "min_payload_size": 1,
+      "dst_mac": "ff:ff:ff:ff:ff:ff",
+      "delay_ms": 0,
+      "min_length": 16,
+      "max_length": 16,
+      "payload_char": "X"
     }
   },
   "receive": {
     "parameters": {
-      "parameter1": "p1",
-      "parameter2": 1234,
-      "parameter3": "p3",
-      "log_file_name": "Example_UDPTimingInterarrivalChannelReceiver.log"
+      "threshold": 60,
+      "log_file_name": "CSC-PSV-LLC_receiver.log",
+      "byte_size": 8,
+      "scapy_filter": "llc",
+      "stop_char": "."
     }
   }
 }
